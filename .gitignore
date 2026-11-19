@@ -1,0 +1,6 @@
+# Generated from your own traces. Never commit these: they hold Broadcom's
+# microcode as register values.
+driver/bwx_ops.h
+*.txt
+*.ko
+*.o
