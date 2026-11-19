@@ -4,6 +4,10 @@ An experimental `net80211` driver for the Broadcom BCM4360 wifi card (`14e4:43a0
 
 **This repository will not build as it stands.** The driver depends on a table of register writes recorded from Broadcom's own Linux driver, `wl`. That table contains Broadcom's microcode, so it is not included, and you have to record it from your own card by following `docs/TRACING.md`.
 
+## Written with AI
+
+This driver was written with Claude Fable 5, an AI model from Anthropic, working in Claude Code. A person directed the work and tested the result on one machine. The code has not had an independent review, so please treat it as an experiment and read it before you trust it.
+
 ## Warnings
 
 - **It can reset or freeze the machine.** Reading a register on a powered-down core will do it, and an ordinary driver bug can too. `docs/NOTES.md` explains the rule that prevents this.
